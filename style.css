@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body{
+  background-image: url("image/1.jpg");
+  background-size: 100% 70%;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgb(0,10,0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav .logo {
+  width: 20%;
+  text-align: left;
+  }
+
+nav .menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a
+ {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main
+ {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  }
+
+section{
+  font-size: 10px;
+}
+
+section h3 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 10px 10px  10px black;
+}
+
+section h1 {
+  margin: 50px  80px 50px;
+  font-size: 40px;
+  text-shadow: 10px 10px 10px black;
+  text-transform: uppercase;
+}
+
+
+section a
+ {
+  padding: 12px 12px;
+  border-radius: 20px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+section .btntwo {
+  background: #00b894;
+  color: black;
+}
+
+.btntwo:hover {
+  background: black;
+  color: white;
+}
+
+
+
+.footer{
+  margin-top: 150px;
+  width: 100%;
+  padding: 100px 15%;
+  background: #333;
+  color: #efefef;
+  display: flex;
+}
+.footer div{
+  text-align: center;
+}
+.col-2{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+form input{
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+
+}
+form button{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px ;
+  font-size: 15px;
+  cursor: pointer;
+}
+.icon{
+  margin-top: 30px;
+}
+.icon i{
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+

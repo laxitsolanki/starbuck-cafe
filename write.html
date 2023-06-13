@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link type="text/css" rel="stylesheet" href="/platform/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <title>Starbucks Careers</title>
+
+</head>
+<body>
+<style>
+.container {
+	margin: 0 auto;
+}
+nav {
+	display: block;
+	position: relative;
+}
+.top-nav > ul > li {
+	float: left;
+	width: 50%;
+	list-style: none;
+}
+.top-nav > ul li a {
+	text-decoration: none;
+}
+.top-nav > ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.sub-menu {
+    padding: 10px 0px;
+    position: absolute;
+    background: transparent;
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-top: 10px;
+    width: 250px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.25);
+    display: none;
+}
+.hidden {
+	display: none;
+}
+.visible {
+	display: visible;
+}
+</style>
+<style> 
+.Rrrr {
+    font-family: customfe36a51f009e4e4f92fa0, cursive;
+    font-size: 28px;
+    font-wight: 100;
+    animation: handwritings 3s linear forwards;
+    -webkit-animation: handwritings 3s linear forwards;
+    -moz-animation: handwritings 3s linear forwards;
+    fill: transparent;
+    stroke: #282828;
+    stroke-width: 3px;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    stroke-linecap: square;
+    }
+.Rrrrr {
+    font-family: customfe36a51f009e4e4f92fa0, cursive;
+    font-size: 32px;
+    font-wight: 100;
+    animation: handwriting 3s linear forwards;
+    -webkit-animation: handwriting 3s linear forwards;
+    -moz-animation: handwriting 3s linear forwards;
+    fill: transparent;
+    stroke: #282828;
+    stroke-width: 3px;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    stroke-linecap: square;
+    }
+    
+    @keyframes handwriting{
+        0% {fill: transparent;}
+	25% {fill: transparent;}
+	75% {fill: #282828;}
+	100% { stroke-dashoffset: 0; fill: #282828;}
+    }
+
+#maincup{
+height: 600px;
+width: 100%;
+background-position: 73% 50%;
+object-fit: cover;
+background-image:url(lo.jpg);
+background-size: cover;
+}
+
+#careers-nameoncup{
+    height: 48px;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 300px;
+    border: 1px solid #00704a;
+    font-family: 'Avenir LT W01_55 Roman1475520';
+    font-size: 22px;
+    color: #333;
+    padding: 0 10px;
+}
+
+#name-submit{
+    background-color: #00704a;
+    font-size: 19px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    min-width: 100px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+#cupform h4{
+    margin: 0;
+    text-align: left;
+    font-size: 42px !important;
+   margin-bottom: 20px;
+   color: black;
+}
+
+#cupform{
+    display: inline-block;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+#ie-svgname{
+    font-family: customfe36a51f009e4e4f92fa0, cursive;
+    font-size: 40px;
+    font-wight: 900;
+    display: none;
+text-shadow: 2px 0 #282828;
+letter-spacing:1px;
+    
+}
+@media(min-width: 1500px){
+#svgname{
+    width: 220px;
+    float: right;
+    margin-right: 27%;
+    margin-top: 10%;
+    transform: rotate(-9deg);
+}
+}
+@media(max-width: 1500px){
+#svgname{
+    width: 220px;
+    float: right;
+    margin-right: 27%;
+    margin-top: 13%;
+    transform: rotate(-9deg);
+}
+
+ #ie-svgname{
+    width: 220px;
+    float: right;
+    margin-right: 26%;
+    margin-top: 15%;
+    transform: rotate(-9deg);
+}
+
+}
+
+@media(max-width: 1028px){
+#svgname{
+    margin-right: 23%;
+    margin-top: 19%;
+
+}
+
+#ie-svgname{
+    margin-right: 22%;
+    margin-top: 21%;
+
+}
+
+}
+@media(max-width: 768px){
+#svgname, #ie-svgname{
+    margin-right: 8%;
+    margin-top: 23%;
+}
+
+#cupform{
+    display: inline-block;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#maincup{
+height: 500px;
+background-size: 100%;
+background-image: url('https://rmkcdn.successfactors.com/98fec2eb/16c687e4-84b1-4cfa-b96f-f.jpg');
+}
+
+}
+@media(max-width: 520px){
+#cupform h4{
+    margin: 0;
+    text-align: left;
+    font-size: 30px !important;
+
+}
+
+#cupform{
+    display: inline-block;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: auto;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+}
+
+#maincup{
+height: 500px;
+background-size: 100%;
+background-image: url('https://rmkcdn.successfactors.com/98fec2eb/e15f005d-e836-4395-bf79-0.jpg');
+}
+
+#svgname, #ie-svgname{
+    margin-right: 21%;
+    margin-top: 40%;
+
+}
+
+}
+</style>
+<div id="maincup" style="">
+    <div id="ie-svgname">Hello
+    </div>
+    <div id="svgname">
+    <svg id="svg-name" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" width="280" >
+      <text id="char1" class="Rrrr" dy="52" x="1" style="animation-delay: 0ms;"></text>
+      <text id="char2" class="Rrrr" dy="52" x="1" style="animation-delay: 500ms;"></text>
+      <text id="char3" class="Rrrr" dy="52" x="1" style="animation-delay: 1000ms;"></text>
+      <text id="char4" class="Rrrr" dy="52" x="1" style="animation-delay: 1500ms;"></text>
+      <text id="char5" class="Rrrr" dy="52" x="1" style="animation-delay: 2000ms;"></text>
+      <text id="char6" class="Rrrr" dy="52" x="1" style="animation-delay: 2500ms;"></text>
+      <text id="char7" class="Rrrr" dy="52" x="1" style="animation-delay: 3000ms;"></text>
+      <text id="char8" class="Rrrr" dy="52" x="1" style="animation-delay: 3500ms;"></text>
+      <text id="char9" class="Rrrr" dy="52" x="1" style="animation-delay: 4000ms;"></text>
+      <text id="char10" class="Rrrr" dy="52" x="1" style="animation-delay: 4500ms;"></text>
+      <text id="char11" class="Rrrr" dy="52" x="1" style="animation-delay: 5000ms;"></text>
+      <text id="char12" class="Rrrr" dy="52" x="1" style="animation-delay: 5500ms;"></text>
+    </svg>
+    </div>
+    <div id="cupform">
+     <h4 id="username">Hi there!
+     </h4>
+     <h4 id="username1">What's your name?
+     </h4>
+     <input type="text" id="careers-nameoncup" maxlength="10">
+     <button type="submit" id="name-submit" class="name-submit" onclick="nameoncup()">Go
+     </button>
+    </div>
+</div>
+<script>
+function isIE() {
+  ua = navigator.userAgent;
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  
+  return is_ie; 
+}
+function nameoncup() {
+  if (isIE()){
+    var str = document.getElementById("careers-nameoncup").value;
+    
+    document.getElementById("ie-svgname").innerHTML= str + " :)" ;
+    document.getElementById("ie-svgname").style.display= "block";
+    document.getElementById("ie-svgname").style.animation=    "handwriting 3s linear forwards";
+    document.getElementById("username").innerHTML="Hi " + str + ",";
+     document.getElementById("username1").innerHTML="We’re glad you’re here.";
+
+}else{
+  var str = document.getElementById("careers-nameoncup").value;
+  var i;
+  var xvalue = 10;
+  var n = str.length;
+  
+if(document.getElementById("char1").innerHTML == "") {
+  
+  for(i=0; i< n; i++)
+  { document.getElementById("username").innerHTML="Hi " + str + ",";
+     document.getElementById("username1").innerHTML="We’re glad you’re here.";
+    if(str.charAt(i) !="" || str.charAt(i) !=" "){
+       i = i + 1; 
+       var elementchar = "char" + i;
+       i = i - 1;
+       document.getElementById(elementchar).innerHTML = str.charAt(i);
+       console.log(elementchar); console.log(str.charAt(i));
+       
+    }
+  }
+  n = n+1;
+   var elementchar = "char" + n;
+   document.getElementById(elementchar).innerHTML = ":";
+   console.log(elementchar);
+   n = n+1;
+   var elementchar = "char" + n;
+   document.getElementById(elementchar).innerHTML = ")";
+   console.log(document.getElementById(elementchar).innerHTML);
+   n = n-2;
+ for(i=0; i< n; i++)
+  { i = i + 1; 
+    var elementchar = "char" + i;
+    i = i - 1;
+
+       if(str.charAt(i) =="a" || str.charAt(i) =="c" || str.charAt(i) =="e" || str.charAt(i) =="f" || str.charAt(i) =="g" || str.charAt(i) =="h" || str.charAt(i) =="n" || str.charAt(i) =="o" || str.charAt(i) =="p" || str.charAt(i) =="r" || str.charAt(i) =="s" || str.charAt(i) =="t" || str.charAt(i) =="v" || str.charAt(i) =="x" || str.charAt(i) =="A" || str.charAt(i) =="C" || str.charAt(i) =="E" || str.charAt(i) =="F" || str.charAt(i) =="G" || str.charAt(i) =="H" || str.charAt(i) =="N" || str.charAt(i) =="O" || str.charAt(i) =="P" || str.charAt(i) =="R" || str.charAt(i) =="S" || str.charAt(i) =="T" || str.charAt(i) =="V" || str.charAt(i) =="X"){
+
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	          xvalue = xvalue + 18;
+}
+       if(str.charAt(i) =="b" || str.charAt(i) =="d" || str.charAt(i) =="B" || str.charAt(i) =="D" ){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 21;
+}
+
+       if(str.charAt(i) =="k" || str.charAt(i) =="u" || str.charAt(i) =="y" || str.charAt(i) =="K" || str.charAt(i) =="U" || str.charAt(i) =="Y"){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 20;
+}
+
+       if(str.charAt(i) =="i" || str.charAt(i) =="l" || str.charAt(i) =="I" || str.charAt(i) =="L" ){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 11;
+}
+
+       if(str.charAt(i) =="z" || str.charAt(i) =="Z"){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 22;
+}
+
+       if(str.charAt(i) =="w"){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 28;
+}
+
+       if(str.charAt(i) =="j" || str.charAt(i) =="J"){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 16;
+}
+
+       if(str.charAt(i) =="m" || str.charAt(i) =="M" || str.charAt(i) =="W"){
+       
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+	   xvalue = xvalue + 30;
+}
+        document.getElementById(elementchar).classList.add("Rrrrr");
+  }
+   xvalue = xvalue + 10;
+   n = n+1;
+   var elementchar = "char" + n;
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+       document.getElementById(elementchar).classList.add("Rrrrr");
+   console.log(elementchar);xvalue = xvalue + 10
+   n = n+1;
+   var elementchar = "char" + n;
+       document.getElementById(elementchar).setAttribute('x', xvalue);
+       document.getElementById(elementchar).classList.add("Rrrrr");
+}
+else{
+  i=1; 
+  n=13;
+  for(i=1; i< n; i++)
+  { document.getElementById("username").innerHTML="Hi there!";
+     document.getElementById("username1").innerHTML="What's your name?";
+    var elementchar = "char" + i;                      console.log("hiii");console.log(elementchar);
+    document.getElementById(elementchar).innerHTML = "";
+    document.getElementById(elementchar).classList.remove("Rrrrr");
+
+   }
+}
+} 
+}
+</script>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

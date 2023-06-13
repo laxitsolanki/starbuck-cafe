@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: poppins;
+}
+.frist{
+	width: 100%;
+	height: 100vh;
+	background-color: #ff;
+	display: grid;
+	place-items: center;
+}
+h1{
+  font-size: 80px;
+  color: black;
+  position: relative;
+}
+h1::after{
+    content: " ";
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background-color: #f39c12;
+    border-radius: 5px;
+    left: 0;
+    bottom: 2px;
+}
+.second{
+	width: 810px;
+	height: 310px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 60px;
+}
+img{
+	width: 200px;
+}
+.card{
+	padding: 20px;
+	text-align: center;
+	box-shadow:10px 10px 30px black;
+	border-radius: 8px;
+	background-color: #ffe4c4;
+}
+p{
+    font-size: 25px;
+    color: black;
+}
